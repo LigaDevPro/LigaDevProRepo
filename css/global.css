@@ -17,6 +17,40 @@
   --color-green-pastel: #D8E9A8;
 }
 
+/* Navbar fija y con color de fondo personalizado */
+.navbar {
+  background-color: var(--color-green-dark);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .navbar-brand {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: var(--color-green-light);
+  text-decoration: underline;
+}
+
+.logo-icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 /* Reset básico */
 * {
   margin: 0;
