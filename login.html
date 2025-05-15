@@ -54,8 +54,46 @@
     
     <button type="submit">Iniciar sesión</button>
     <a href="recuperar_contrasena.html">¿Has olvidado tu contraseña?</a>
-    <h5>o</h5>
-    <button type="submit">Registrarse</button>
+    <h5> o </h5>
+        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#registroModal">
+        Registrarse
+      </button>
+    </form>
+  </div>
+     <!-- ventana modal -->
+  <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form action="/registro" method="POST">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registroModalLabel">Registro de Usuario</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="nuevoUsuario" class="form-label">Usuario:</label>
+              <input type="text" class="form-control" id="nuevoUsuario" name="nuevoUsuario" required>
+            </div>
+            <div class="mb-3">
+              <label for="nuevoEmail" class="form-label">Correo electrónico:</label>
+              <input type="email" class="form-control" id="nuevoEmail" name="nuevoEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="nuevaContrasena" class="form-label">Contraseña:</label>
+              <input type="password" class="form-control" id="nuevaContrasena" name="nuevaContrasena" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-success">Registrarse</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </form>    
 </body>
 </html>
