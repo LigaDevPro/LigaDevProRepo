@@ -1,83 +1,176 @@
-/* index.css */
-
-/* Estilo para secciones de contenido fuera del carrusel */
-.main-container {
-  background-color: var(--color-green-pastel);
-  padding: 40px 20px;
-  text-align: center;
-  margin-top: 40px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Sección de contenido principal */
-.content-section {
-  padding: 60px 20px;
-  text-align: center;
+.main{
+    height: 95vh;
+    background-color: rgb(78, 159, 61);
+    background-image: url("../assets/img/image1.png");
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.content-section h2 {
-  font-size: 2.5rem;
-  color: var(--color-green-dark);
-  margin-bottom: 20px;
+.main-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 5rem;
+border-radius: 1rem;
+margin: 20rem;
 }
 
-.content-section p {
-  font-size: 1.125rem;
-  color: var(--color-dark);
-  margin-bottom: 30px;
+.main-container h1{
+    font-size: 3rem;
+    color: rgb(78, 159, 61)
 }
 
-.content-section .cta-button {
-  background-color: var(--color-green-light);
-  padding: 12px 30px;
-  font-size: 1.1rem;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.main-container p {
+    font-size: 1.2rem;
 }
 
-.content-section .cta-button:hover {
-  background-color: var(--color-green-dark);
+.section{
+    height: 95vh;
+    background-color: rgb(78, 159, 61);
+    background-image: url("../assets/img/image2.png");
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-/* Footer */
-footer {
-  background-color: var(--color-green-dark);
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+.section-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 5rem;
+border-radius: 1rem;
+margin: 20rem;
 }
 
-footer p {
-  font-size: 1rem;
+.section-container h1{
+    font-size: 3rem;
+    color: rgb(78, 159, 61)
 }
 
-/* Título principal */
-.main-title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  text-align: center;
+.section-container p {
+    font-size: 1.2rem;
 }
 
-/* Párrafo principal */
-.lead {
-  font-size: 1.25rem;
-  margin-bottom: 30px;
-  text-align: center;
-  margin-top: 30px;
+.section-two{
+    height: 95vh;
+    background-color: rgb(78, 159, 61);
+    background-image: url("../assets/img/image3.png");
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .content-section h2 {
-    font-size: 2rem;
-  }
+.section-two-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 5rem;
+border-radius: 1rem;
+margin: 20rem;
+}
 
-  .main-title {
-    font-size: 2rem;
-  }
+.section-two-container h1{
+    font-size: 3rem;
+    color: rgb(78, 159, 61)
+}
 
-  .lead {
-    font-size: 1.1rem;
-  }
+.section-two-container p {
+    font-size: 1.2rem;
+}
+
+.footer-container{
+height: 2.5rem;
+width: 100%;
+background-color: #212529;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+font-weight: 200;
+}
+
+.section{
+    height: 95vh;
+    background-color: rgb(78, 159, 61);
+    background-image: url("../assets/img/image2.png");
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 5rem;
+border-radius: 1rem;
+margin: 20rem;
+}
+
+.section-container h1{
+    font-size: 3rem;
+    color: rgb(78, 159, 61)
+}
+
+.section-container p {
+    font-size: 1.2rem;
+}
+
+.section-two{
+    height: 95vh;
+    background-color: rgb(78, 159, 61);
+    background-image: url("../assets/img/image3.png");
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-two-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 5rem;
+border-radius: 1rem;
+margin: 20rem;
+}
+
+.section-two-container h1{
+    font-size: 3rem;
+    color: rgb(78, 159, 61)
+}
+
+.section-two-container p {
+    font-size: 1.2rem;
 }

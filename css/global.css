@@ -20,8 +20,8 @@
 /* Navbar fija y con color de fondo personalizado */
 .navbar {
   background-color: var(--color-green-dark);
-  padding: 15px 0;
-  position: sticky;
+  padding: 15px 0 !important;
+  position: sticky !important;
   top: 0;
   z-index: 1000;
   transition: background-color 0.3s ease;
@@ -74,6 +74,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Títulos */
