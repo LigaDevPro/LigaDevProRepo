@@ -29,7 +29,7 @@
 
 .input-field i {
   margin-left: 15px;
-  color: #1E5128;
+  color: #ffffff;
 }
 
 input {
@@ -45,18 +45,34 @@ input::placeholder {
   color: #ffffff;
 }
 
+.enlace-claro {
+    color: rgba(255, 255, 255, 0.76) !important;
+}
+
 form a {
-  color: #1E5128;
   display: block;
   text-align: right;
   font-size: 0.9rem;
   margin-top: 8px;
 }
 
+
 .btn-field {
   display: flex;
   justify-content: space-between;
 }
+
+/* Cambia el color de los botones verdes de Bootstrap */
+.btn-success {
+  background-color: #4CAF50 !important; /* Verde más claro */
+  border-color: #4CAF50 !important;
+}
+
+.btn-success:hover {
+  background-color: #1E5128 !important;
+  border-color: #1E5128 !important;
+}
+
 
 /* Tabs */
 .form-tabs {
