@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio De Sesión</title>
-    <link rel="icon" href="./assets/icon/icon.png">
- <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login y Registro</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="icon" href="./assets/icon/icon.png">
   <!-- Fuente Inter -->
   <style>
     @font-face {
@@ -18,14 +20,11 @@
       font-style: normal;
     }
   </style>
-
-  <!-- CSS personalizado -->
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/login.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 </head>
+
 <body>
-      <!-- Navbar -->
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
     <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
       <img src="assets/icon/iconpag.png" alt="Logo" class="logo-icon" />
@@ -35,67 +34,67 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">Quiénes Somos</a></li>
-        <li class="nav-item"><a class="nav-link" href="dashboard.html">Panel</a></li>
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
       </ul>
     </div>
   </nav>
 
   <div class="container">
-    <div class="form-content">
-      <h1>Iniciar Sesión</h1>
-      <form>
-        <div class="input-group">
-          <div class="input-field">
-            <i class="fa-solid fa-user" ></i>
-            <input type="text" placeholder="Usuario">
-          </div>
-          <div class="input-field">
-            <i class="fa-solid fa-lock"></i>
-            <input type="password" placeholder="Contraseña">
-          </div>
-          <a href="recuperar_contrasena.html">¿Has olvidado tu contraseña?</a>
-        </div>
-        <div class="btn-field">
-          <button id="singIn" type="button" class="diable">Iniciar Sesión</button>
-          <button id="singUp" type="button" data-bs-toggle="modal" data-bs-target="#registroModal">Registrarse</button>
-        </div>
-      </form>
-    </div>
-  </div>
+    <div class="row justify-content-center w-100">
+      <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+        <div class="form-content">
 
-     <!-- ventana modal -->
-  <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form action="/registro" method="POST">
-          <div class="modal-header">
-            <h5 class="modal-title" id="registroModalLabel">Registro de Usuario</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          <!-- Alternador oculto -->
+          <input type="checkbox" id="toggleForm" hidden>
+
+          <!-- Tabs -->
+          <div class="form-tabs mb-4">
+            <label for="toggleForm" class="tab login-tab">Iniciar Sesión</label>
+            <label for="toggleForm" class="tab register-tab">Registrarse</label>
           </div>
-          <div class="modal-body">
-            <div class="mb-3">
-              <label for="nuevoUsuario" class="form-label">Usuario:</label>
-              <input type="text" class="form-control" id="nuevoUsuario" name="nuevoUsuario" required>
+
+          <!-- Formulario de Login -->
+          <form class="form-section login-section">
+            <div class="input-group">
+              <div class="input-field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Usuario" required />
+              </div>
+              <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Contraseña" required />
+              </div>
+              <a href="#" class="enlace-claro">¿Has olvidado tu contraseña?</a>
             </div>
-            <div class="mb-3">
-              <label for="nuevoEmail" class="form-label">Correo electrónico:</label>
-              <input type="email" class="form-control" id="nuevoEmail" name="nuevoEmail" required>
+            <div class="btn-field mt-3">
+              <button type="submit" class="btn btn-success w-100">Iniciar Sesión</button>
             </div>
-            <div class="mb-3">
-              <label for="nuevaContrasena" class="form-label">Contraseña:</label>
-              <input type="password" class="form-control" id="nuevaContrasena" name="nuevaContrasena" required>
+          </form>
+
+          <!-- Formulario de Registro -->
+          <form class="form-section register-section">
+            <div class="input-group">
+              <div class="input-field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Nuevo usuario" required />
+              </div>
+              <div class="input-field">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Correo electrónico" required />
+              </div>
+              <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Contraseña" required />
+              </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="submit" class="btn btn-success">Registrarse</button>
-          </div>
-        </form>
+            <div class="btn-field mt-3">
+              <button type="submit" class="btn btn-success w-100">Registrarse</button>
+            </div>
+          </form>
+
+        </div>
       </div>
     </div>
   </div>
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>   
 </body>
 </html>
