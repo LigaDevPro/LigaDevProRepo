@@ -7,6 +7,10 @@
   padding-bottom: 5vh;
 }
 
+.titulo-form {
+  color: #D8E9A8;
+}
+
 .form-content {
   width: 100%;
   max-width: 450px;
