@@ -368,6 +368,65 @@ nav ul li a:hover::after {
   color: var(--text-secondary);
 }
 
+/* Sección de Experiencia Laboral */
+.experience {
+  background: var(--gradient-bg);
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.experience-item {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+}
+
+.experience-item:hover {
+  box-shadow: var(--box-shadow-hover);
+  border-color: var(--primary-color);
+  transform: scale(1.02);
+}
+
+.experience-item h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.experience-item h4 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.experience-item h4 a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+.experience-item h4 a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+.experience-date {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.experience-item p {
+  color: var(--text-secondary);
+}
+
 /* Sección de Habilidades */
 .skills {
   background: var(--gradient-bg);
@@ -788,6 +847,10 @@ footer {
   .languages-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
   }
 }
 
